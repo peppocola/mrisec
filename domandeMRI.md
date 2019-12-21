@@ -38,10 +38,6 @@
 
 6)Illustrare in maniera sintetica il problema del Cold-start nei recommender systems di tipo collaborativo
 
-<br><br>
-	un nuovo recommender system di tipo collaborativo non ha utenti iscritti ma ha solamente degli item che non sono valutati da alcun utente.
-	questo rende impossibile, all'arrivo di un nuovo utente, proporre delle raccomandazioni per l'utente perchè non esistono utenti a cui il recommender può "ispirarsi" per effettuare delle raccomandazioni. fino a quando non ci sarà un numero cospicuo di utenti, le similiarità saranno uguali o prossime allo zero e le raccomandazioni, dove possibile effettuarle con questo approccio, saranno di scarso livello.
-
 <br><br><br>
 7)Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione ricorsiva basata sul “flow” model.
 
