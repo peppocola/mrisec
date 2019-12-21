@@ -34,13 +34,10 @@
 <br><br><br>
 4)Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo user-to-user.
 
-<br><br>
-		in un content-based recommender system c'è alto rischio di overspecialization, perchè creando il profilo si tende a consigiare spesso "many of the same", cioè oggetti sempre molto simili tra loro := rischio di raccomandazioni ripetitive con scarsa novelty/serendipity per via della sovraspecializzazione del recommender
-
-
-
-
 5)Illustrare in maniera sintetica il problema della overspecialization (sovraspecializzazione) dei content-based recommender systems
+
+<br><br>
+		in un content-based recommender system c'è alto rischio di **overspecialization**, perchè creando il profilo si tende a consigiare spesso "many of the same", cioè oggetti sempre molto simili tra loro avendo scarsa **novelty/serendipity**.
 
 6)Illustrare in maniera sintetica il problema del Cold-start nei recommender systems di tipo collaborativo
 
