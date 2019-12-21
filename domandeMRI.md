@@ -38,14 +38,34 @@
 
 6)Illustrare in maniera sintetica il problema del Cold-start nei recommender systems di tipo collaborativo
 
+<br><br>
+	un nuovo recommender system di tipo collaborativo non ha utenti iscritti ma ha solamente degli item che non sono valutati da alcun utente.
+	questo rende impossibile, all'arrivo di un nuovo utente, proporre delle raccomandazioni per l'utente perchè non esistono utenti a cui il recommender può "ispirarsi" per effettuare delle raccomandazioni. fino a quando non ci sarà un numero cospicuo di utenti, le similiarità saranno uguali o prossime allo zero e le raccomandazioni, dove possibile effettuarle con questo approccio, saranno di scarso livello.
+
+<br><br><br>
 7)Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione ricorsiva basata sul “flow” model.
 
 8)Descrivere in maniera sintetica i concetti fondamentali alla base del modello dei dati RDF, in particolare i concetti di risorsa, proprietà e statement.
 
+<br><br>
+	il modello dei dati RDF è basato su tre concetti:
+	<br>
+	 – **Risorse**: tutto ciò che viene descritto, ogni risorsa è identificata da un URI
+	<br>
+	 – **Proprietà**: una coppia attributo-valore che si vuole associare ad una risorsa, l'attributo è anch'esso identificato da un URI e il valore può essere un'altra risorsa o un tipo di dato primitivo (stringa, intero...)
+	<br>
+	 – **Asserzioni o statement**: l’associazione di una proprietà ad una risorsa, ci dice che “una risorsa (soggetto) ha un certo valore (oggetto) per una certa proprietà (predicato)”
+
+<br><br><br>
 9)Descrivere il problema dello spider trap nell’algoritmo PageRank e illustrare una possibile soluzione.
 
 10)Descrivere i principali problemi dell’algoritmo PageRank e illustrare una possibile soluzione.
 
+<br><br><br>
 11)Descrivere in maniera sintetica il concetto di reificazione degli statement RDF.
+
+<br><br>
+	**reificazione** significa riduzione ad oggetto dell'asserzione. Si utilizza la reificazione per esprimere meta-informazioni su una meta-informazione. Quindi l'oggetto della tripla Soggetto-Proprietà-Oggetto diventa uno statement, quindi una tripla Soggetto-Proprietà-Oggetto.
+	Dopo avere reificato l’asserzione si potranno esprimere ulteriori proprietà su di essa.
 
 12)Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione basata su matrici di adiacenza stocastiche
