@@ -36,9 +36,6 @@
 
 5)Illustrare in maniera sintetica il problema della overspecialization (sovraspecializzazione) dei content-based recommender systems
 
-<br><br>
-		in un content-based recommender system c'è alto rischio di **overspecialization**, perchè creando il profilo si tende a consigiare spesso "many of the same", cioè oggetti sempre molto simili tra loro avendo scarsa **novelty/serendipity**.
-
 6)Illustrare in maniera sintetica il problema del Cold-start nei recommender systems di tipo collaborativo
 
 7)Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione ricorsiva basata sul “flow” model.
