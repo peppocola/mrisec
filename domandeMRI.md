@@ -40,7 +40,23 @@
 
 <br><br><br>
 7)Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione ricorsiva basata sul “flow” model.
-
+	<br>
+	**INTRO**
+	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le 		pagine.
+	Per il rank delle pagine si sfrutta la struttura del grafo (link entranti e uscenti da ogni nodo)
+	<br>
+	**FLOW MODEL**
+	I link vengono visti come voti, l'importanza di un link è proporzionale all' importanza
+	della pagina da cui proviene in particolare il peso di un link è dato dall' importanza
+	della pagina diviso l'out degree della pagina.
+	L' importanza di una pagina è data dalla somma dei voti su i suoi link entranti.
+	[inserire formule qui(sommatoria e equazioni)]
+	se costruiamo le "equazioni di flusso" per un grafo otteniamo n equazioni in n incognite
+	e questo non permette di avere una soluzione unica, per risolvere questo problema
+	si aggiunge un ulteriore vincolo che permette l'unicità (r1+r2+...+rn=1)
+	Questa formulazione funziona bene con piccoli grafi ma non è scalabile
+	quini abbiamo bisogno di una nuova formulazione ovvero la **MATRIX FORMULATION**
+	<br>
 8)Descrivere in maniera sintetica i concetti fondamentali alla base del modello dei dati RDF, in particolare i concetti di risorsa, proprietà e statement.
 
 <br><br>
@@ -54,9 +70,21 @@
 
 <br><br><br>
 9)Descrivere il problema dello spider trap nell’algoritmo PageRank e illustrare una possibile soluzione.
+<br>
+**spider trap**:se nel grafo ci sono dei cicli i nodi coinvolti nel ciclo assorbono
+l'importanza e non è garantita la convergenza dell' algoritmo<br>
+una possibile soluzione è data dal random teleport<br>
+**random teleport**:ad ogni istante si segue un link con probabilita b e si salta ad una pagina casuale con probabilita 1-b
+(b in range[0.8, 0.9])<br>
 
 10)Descrivere i principali problemi dell’algoritmo PageRank e illustrare una possibile soluzione.
-
+<br>
+**spider trap**:se nel grafo ci sono dei cicli i nodi coinvolti nel ciclo assorbono
+l'importanza e non è garantita la convergenza dell' algoritmo<br>
+**dead end**:se c'e un nodo senza archi uscenti l'algoritmo converge ma tutte le pagine avranno importanza 0<br>
+entrambi i problemi si risolvono con il **random teleport**:
+ad ogni istante si segue un link con probabilita b e si salta ad una pagina casuale con probabilita 1-b
+(b in range[0.8, 0.9])
 <br><br><br>
 11)Descrivere in maniera sintetica il concetto di reificazione degli statement RDF.
 
@@ -65,3 +93,24 @@
 	Dopo avere reificato l’asserzione si potranno esprimere ulteriori proprietà su di essa.
 
 12)Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione basata su matrici di adiacenza stocastiche
+<br>
+	**INTRO**
+	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le 		pagine.
+	Per il rank delle pagine si sfrutta la struttura del grafo (link entranti e uscenti da ogni nodo)
+	<br>
+	**MATRIX FORMULATION**<br>
+	In questa formulazione si costruisce a partire dal grafo una matrice di adiacenza stocastica
+	dove se la pagina I ha Di link uscenti allora
+	se i->j allora Mji=1/Di altrimenti Mji=0
+	Dato r un vettore con un valore per ogni pagina:
+	ri è l' importanza della pagina i
+	la somma dei valori di r=1[inserire formula qui]
+	quindi data M:matrice di adiacenza e r:vettore dei rank le "equazioni di flusso"
+	possono essere scritte come
+	r=M*r
+	Cosi facendo abbiamo trasformato il problema del rankong nel problema di ricerca
+	di un autovettore per la matrice M
+	L' autovettore che cerchiamo è quello associato all' autovalore 1
+	(il fatto che la matrice M sia stocastica ci assicura l'esistenza di tale autovettore)
+	inoltre possiamo risolvere questo problema in modo efficiente con il metodo delle power iteration
+	[inserire metodo delle potenze]
