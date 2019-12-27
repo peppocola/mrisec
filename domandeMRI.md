@@ -93,6 +93,7 @@
 	**reificazione** significa riduzione ad oggetto dell'asserzione. Si utilizza la reificazione per esprimere meta-informazioni su una meta-informazione. Quindi l'oggetto della tripla Soggetto-Proprietà-Oggetto diventa uno statement, quindi una tripla Soggetto-Proprietà-Oggetto.
 	Dopo avere reificato l’asserzione si potranno esprimere ulteriori proprietà su di essa.
 
+<br><br><br>
 12)Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione basata su matrici di adiacenza stocastiche
 <br>
 	**INTRO**
