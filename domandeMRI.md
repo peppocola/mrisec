@@ -95,7 +95,8 @@
 
 <br><br><br>
 12)Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione basata su matrici di adiacenza stocastiche
-<br>
+
+<br><br>
 	**INTRO**
 	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le pagine.
 	Per il rank delle pagine si sfrutta la struttura del grafo (link entranti e uscenti da ogni nodo)
