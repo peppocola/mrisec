@@ -3,9 +3,14 @@
 <br><br>
 		**many of the same /overspecialization** := rischio di raccomandazioni ripetitive con scarsa novelty/serendipity per via della sovraspecializzazione del recommender
 		<br>
-		**new user** := non conosco i gusti del nuovo utente quindi non so cosa raccomandargli
+		**new user** := Prima che un recommender system di tipo content-based possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
 		<br>
-		**limited content analisys** := un item potrebbe essere descritto in generale senza fare menzione delle feature più importanti, che potrebbe portare a raccomandare l'item quando non dovrebbe o proprio a non essere mai raccomandato
+		**limited content analisys** := un item potrebbe essere descritto in generale senza fare menzione delle feature più importanti, che potrebbe portare a il sistema a raccomandare l'item quando non dovrebbe o proprio a non essere mai raccomandato.
+
+		Nessun content-based recommender system può fornire delle raccomandazioni affidabili se il contenuto analizzato non ha abbastanza informazioni per distinguere gli item che piacciono all'utente rispetto a quelli che non gradisce. Alcune rappresentazioni hanno solamente alcuni aspetti e ne tralasciano altri che potrebbero influenzare l'esperienza dell'utente
+
+		In conclusione, assegnare manualmente o automaticamente le features all'item potrebbe non essere sufficiente per distuinguere gli aspetti dell'item che sono necessari per l'elicitazione degli interessi dell'utente
+
 <br><br><br>
 2)Illustrare in maniera sintetica i problemi dei recommender systems di tipo collaborativo.
 
@@ -64,6 +69,9 @@
 5)Illustrare in maniera sintetica il problema della overspecialization (sovraspecializzazione) dei content-based recommender systems
 
 6)Illustrare in maniera sintetica il problema del Cold-start nei recommender systems di tipo collaborativo
+
+<br><br>
+	Prima che un recommender system di tipo content-based possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
 
 <br><br><br>
 7)Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione ricorsiva basata sul “flow” model.
