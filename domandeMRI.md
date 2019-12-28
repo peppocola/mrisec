@@ -34,6 +34,10 @@
 <br><br><br>
 4)Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo user-to-user.
 
+<br><br>
+	Per predire i rating in un recommender system collaborativo di tipo user-to-user, dato un utente attivo(Alice) e un item(I) non 	ancora visto da Alice, si trova l'insieme degli utenti a cui sono piaciuti gli stessi item piaciuti ad Alice nel passato e che hanno valutato l'item I(neighbors).<br>
+	Si puo utilizzare la media dei rating dei neighbors per predire il rating che Alice dara all'item I. L'idea e che se gli utenti hanno avuto gusti simili nel passato, avranno gusti simili nel futuro. Si puo migliorare la predizione pesando i rating degli utenti con la loro similarita con Alice anziche utilizzare la semplice media. Si puo utilizzare una qualsiasi metrica di similarita ma le piu usate sono la similarita del coseno e il coeficiente di correlazione di Pearson[inserire img]. Una formula comunemente usata per calcolare le predizioni è la seguente<br><img><br>che tiene conto dello stile di valutazione degli utenti piuttosto che il valore numerico del rating. Si puo migliorare la predizione pesando maggiormente gli utenti che hanno piu item in comune [fattelo tu] penalizzando quelli che hanno un numero di item in comune minore di una certa soglia. Inoltre si pesa maggiormente il rating su un item controverso piuttosto che uno su un item con scarsa varianza sui rating. Un approccio puo essere quello di usare la inverse user frequency[img][formulone]
+
 5)Illustrare in maniera sintetica il problema della overspecialization (sovraspecializzazione) dei content-based recommender systems
 
 6)Illustrare in maniera sintetica il problema del Cold-start nei recommender systems di tipo collaborativo
