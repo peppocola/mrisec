@@ -28,7 +28,7 @@
 
 
 # 1
-Illustrare in maniera sintetica i problemi dei recommender systems di tipo content-based.
+**Illustrare in maniera sintetica i problemi dei recommender systems di tipo content-based.**
 
 <br><br>
 		**Many of the same/Overspecialization** := I recommender system di tipo content-based non hanno un metodo per trovare qualcosa di nuovo. Il sistema suggerisce gli item che, quando confrontati con il profilo dell'utente, hanno un punteggio alto. Quindi all'utente saranno raccomandati gli item simili a quelli gia votati. Questo inconveniente è chiamato serendipity problem che evidenzia la tendenza dei sistemi basati sui contenuti a produrre raccomandazioni con un limitato grado di novita. Per dare un esempio, quando un utente ha valutato solo i film di Harry Potter, ricevera raccomandazioni solo per quel tipo di film. Una tecnica content-based perfetta raramente proporra qualcosa di nuovo, limitando cosi le applicazioni per le quali potrebbe essere utile.
@@ -44,7 +44,7 @@ Illustrare in maniera sintetica i problemi dei recommender systems di tipo conte
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 2
-Illustrare in maniera sintetica i problemi dei recommender systems di tipo collaborativo.
+**Illustrare in maniera sintetica i problemi dei recommender systems di tipo collaborativo.**
 
 <br><br>
 		**Matrice sparsa per i rating** := difficile trovare dei vicini
@@ -65,7 +65,7 @@ Illustrare in maniera sintetica i problemi dei recommender systems di tipo colla
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 3
-Descrivere le metriche di errore (MAE ed RMSE) utilizzate per la valutazione dell’accuratezza dei recommender systems.
+**Descrivere le metriche di errore (MAE ed RMSE) utilizzate per la valutazione dell’accuratezza dei recommender systems.**
 
 <br><br>
 	**MAE** := Mean Absolute Error, calcola la deviazione tra i rating predetti e i rating reali
@@ -77,7 +77,7 @@ Descrivere le metriche di errore (MAE ed RMSE) utilizzate per la valutazione del
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 4
-Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo user-to-user.
+**Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo user-to-user.**
 
 <br><br>
 	Per predire i rating in un recommender system collaborativo di tipo user-to-user, dato un utente attivo(Alice) e un item(I) non ancora visto da Alice, si trova l'insieme degli utenti a cui sono piaciuti gli stessi item piaciuti ad Alice nel passato e che hanno valutato l'item I(neighbors).<br>
@@ -108,7 +108,7 @@ Descrivere, commentando opportunamente, la funzione per il calcolo delle predizi
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 5
-Illustrare in maniera sintetica il problema della overspecialization (sovraspecializzazione) dei content-based recommender systems
+**Illustrare in maniera sintetica il problema della overspecialization (sovraspecializzazione) dei content-based recommender systems**
 
 <br><br>
 	I recommender system di tipo content-based non hanno un metodo per trovare qualcosa di nuovo. Il sistema suggerisce gli item che, quando confrontati con il profilo dell'utente, hanno un punteggio alto. Quindi all'utente saranno raccomandati gli item simili a quelli gia votati. Questo inconveniente è chiamato serendipity problem che evidenzia la tendenza dei sistemi basati sui contenuti a produrre raccomandazioni con un limitato grado di novita. Per dare un esempio, quando un utente ha valutato solo i film di Harry Potter, ricevera raccomandazioni solo per quel tipo di film. Una tecnica content-based perfetta raramente proporra qualcosa di nuovo, limitando cosi le applicazioni per le quali potrebbe essere utile.
@@ -116,7 +116,7 @@ Illustrare in maniera sintetica il problema della overspecialization (sovraspeci
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 6
-Illustrare in maniera sintetica il problema del Cold-start nei recommender systems di tipo collaborativo
+**Illustrare in maniera sintetica il problema del Cold-start nei recommender systems di tipo collaborativo**
 
 <br><br>
 	Prima che un recommender system di tipo content-based possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
@@ -124,7 +124,7 @@ Illustrare in maniera sintetica il problema del Cold-start nei recommender syste
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 7
-Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione ricorsiva basata sul “flow” model.
+**Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione ricorsiva basata sul “flow” model.**
 
 <br><br>
 	**INTRO**
@@ -144,7 +144,7 @@ Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando 
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 8
-Descrivere in maniera sintetica i concetti fondamentali alla base del modello dei dati RDF, in particolare i concetti di risorsa, proprietà e statement.
+**Descrivere in maniera sintetica i concetti fondamentali alla base del modello dei dati RDF, in particolare i concetti di risorsa, proprietà e statement.**
 
 <br><br>
 	il modello dei dati RDF è basato su tre concetti:
@@ -158,7 +158,7 @@ Descrivere in maniera sintetica i concetti fondamentali alla base del modello de
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 9
-Descrivere il problema dello spider trap nell’algoritmo PageRank e illustrare una possibile soluzione.
+**Descrivere il problema dello spider trap nell’algoritmo PageRank e illustrare una possibile soluzione.**
 
 <br><br>
 	**(1) (Stanford University)**<br>
@@ -177,7 +177,7 @@ Descrivere il problema dello spider trap nell’algoritmo PageRank e illustrare 
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 10
-Descrivere i principali problemi dell’algoritmo PageRank e illustrare una possibile soluzione.
+**Descrivere i principali problemi dell’algoritmo PageRank e illustrare una possibile soluzione.**
 
 <br><br>
 	**(1) (Stanford University)**<br>
@@ -198,7 +198,7 @@ Descrivere i principali problemi dell’algoritmo PageRank e illustrare una poss
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 11
-Descrivere in maniera sintetica il concetto di reificazione degli statement RDF.
+**Descrivere in maniera sintetica il concetto di reificazione degli statement RDF.**
 
 <br><br>
 	**Reificazione** significa riduzione ad oggetto dell'asserzione. Si utilizza la reificazione per esprimere meta-informazioni su una meta-informazione. Quindi l'oggetto della tripla Soggetto-Proprietà-Oggetto diventa uno statement, quindi una tripla Soggetto-Proprietà-Oggetto.
@@ -207,7 +207,7 @@ Descrivere in maniera sintetica il concetto di reificazione degli statement RDF.
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 12
-Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione basata su matrici di adiacenza stocastiche
+**Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione basata su matrici di adiacenza stocastiche**
 
 <br><br>
 	**INTRO**
