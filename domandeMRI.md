@@ -137,11 +137,9 @@ Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando 
 	<br>
 	![](./img/rank_flow.PNG)
 	<br>
-	se costruiamo le "equazioni di flusso" per un grafo otteniamo n equazioni in n incognite
-	e questo non permette di avere una soluzione unica, per risolvere questo problema
-	si aggiunge un ulteriore vincolo che permette l'unicità (r1+r2+...+rn=1)
-	Questa formulazione funziona bene con piccoli grafi ma non è scalabile.<br>
-	quini abbiamo bisogno di una nuova formulazione ovvero la **MATRIX FORMULATION**
+	Se costruiamo le "equazioni di flusso" per un grafo otteniamo n equazioni in n incognite. Questo non permette di avere una soluzione unica. Per risolvere questo problema si aggiunge un ulteriore vincolo che permette l'unicità ***(r1+r2+...+rn=1)***.
+	In questo modo si può risolvere il sistema di equazioni con l'Eliminazione di Gauss che tuttavia funziona bene con piccoli grafi ma non è scalabile.<br>
+	Quindi abbiamo bisogno di una nuova formulazione ovvero la **MATRIX FORMULATION**
 	<br>
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
@@ -186,7 +184,7 @@ Descrivere i principali problemi dell’algoritmo PageRank e illustrare una poss
 	<br>
 	**Spider Trap**: un gruppo di una o più pagine che non hanno alcun link che porta a nodi che non appartengono al gruppo. in questo caso i nodi appartenenti al gruppo accumuleranno tutta l'importanza del Web. 	
 	<br>
-	**Dead End**: : una pagina che non ha successori (link uscenti) non può inviare la sua importanza a nessun nodo. In questo caso tutta l'importanza fuoriuscirà dal web(tutti i nodi avranno importanza 0).
+	**Dead End**: una pagina che non ha successori (link uscenti) non può inviare la sua importanza a nessun nodo. In questo caso tutta l'importanza fuoriuscirà dal web(tutti i nodi avranno importanza 0).
 	<br><br>
 	Una soluzione ad entrambi i problemi è quella di "tassare" ogni pagina di una frazione della sua importanza(solitamente 0.2) e distribuire l'importanza tassata in modo uguale verso tutte le pagine (**Random Teleport**)
 	<br><br>
