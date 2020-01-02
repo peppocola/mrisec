@@ -1,6 +1,7 @@
 ***Se trovi qualche errore o puoi suggerire qualche miglioria, fallo inviando una pull-request oppure segnalamelo in qualche modo, grazie***
 
-Lista Domande:<br>
+# Lista Domande:
+
 [1](#1))Illustrare in maniera sintetica i problemi dei recommender systems di tipo content-based.
 <br><br>
 [2](#2))Illustrare in maniera sintetica i problemi dei recommender systems di tipo collaborativo.
@@ -40,6 +41,7 @@ Illustrare in maniera sintetica i problemi dei recommender systems di tipo conte
 		<br>
 		In conclusione, assegnare manualmente o automaticamente le features all'item potrebbe non essere sufficiente per distuinguere gli aspetti dell'item che sono necessari per l'elicitazione degli interessi dell'utente
 
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 2
 Illustrare in maniera sintetica i problemi dei recommender systems di tipo collaborativo.
@@ -59,6 +61,8 @@ Illustrare in maniera sintetica i problemi dei recommender systems di tipo colla
 		**"Canto delle sirene"(SEMERARO TRADEMARK)** := valutazioni false o organizzate alterano lo stato del sistema e influenzano le raccomandazioni ***&ast;***
 		<br><br>
 		***&ast;= la risposta è approssimativa e stiamo cercando delle risposte migliori***
+
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 3
 Descrivere le metriche di errore (MAE ed RMSE) utilizzate per la valutazione dell’accuratezza dei recommender systems.
@@ -69,6 +73,8 @@ Descrivere le metriche di errore (MAE ed RMSE) utilizzate per la valutazione del
 	**RMSE** := Root Mean Square Error, come MAE ma penalizza deviazioni più grandi utilizzando il quadrato della differenza tra rating predetto e rating attuale
 
 ![](./img/mae_rmse.PNG)
+
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 4
 Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo user-to-user.
@@ -98,7 +104,8 @@ Descrivere, commentando opportunamente, la funzione per il calcolo delle predizi
 	<br>
 	![](./img/u2u_FWPC.PNG)
 	<br>
-
+	
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 5
 Illustrare in maniera sintetica il problema della overspecialization (sovraspecializzazione) dei content-based recommender systems
@@ -106,14 +113,15 @@ Illustrare in maniera sintetica il problema della overspecialization (sovraspeci
 <br><br>
 	I recommender system di tipo content-based non hanno un metodo per trovare qualcosa di nuovo. Il sistema suggerisce gli item che, quando confrontati con il profilo dell'utente, hanno un punteggio alto. Quindi all'utente saranno raccomandati gli item simili a quelli gia votati. Questo inconveniente è chiamato serendipity problem che evidenzia la tendenza dei sistemi basati sui contenuti a produrre raccomandazioni con un limitato grado di novita. Per dare un esempio, quando un utente ha valutato solo i film di Harry Potter, ricevera raccomandazioni solo per quel tipo di film. Una tecnica content-based perfetta raramente proporra qualcosa di nuovo, limitando cosi le applicazioni per le quali potrebbe essere utile.
 	<br>
-
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 6
 Illustrare in maniera sintetica il problema del Cold-start nei recommender systems di tipo collaborativo
 
 <br><br>
 	Prima che un recommender system di tipo content-based possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
-
+	<br>
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 7
 Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione ricorsiva basata sul “flow” model.
@@ -134,7 +142,8 @@ Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando 
 	si aggiunge un ulteriore vincolo che permette l'unicità (r1+r2+...+rn=1)
 	Questa formulazione funziona bene con piccoli grafi ma non è scalabile.<br>
 	quini abbiamo bisogno di una nuova formulazione ovvero la **MATRIX FORMULATION**
-
+	<br>
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 8
 Descrivere in maniera sintetica i concetti fondamentali alla base del modello dei dati RDF, in particolare i concetti di risorsa, proprietà e statement.
@@ -147,7 +156,8 @@ Descrivere in maniera sintetica i concetti fondamentali alla base del modello de
 	 – **Proprietà**: una coppia attributo-valore che si vuole associare ad una risorsa, l'attributo è anch'esso identificato da un URI e il valore può essere un'altra risorsa o un tipo di dato primitivo (stringa, intero...)
 	<br>
 	 – **Asserzioni o statement**: l’associazione di una proprietà ad una risorsa, ci dice che “una risorsa (soggetto) ha un certo valore (oggetto) per una certa proprietà (predicato)”
-
+	 <br>
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 9
 Descrivere il problema dello spider trap nell’algoritmo PageRank e illustrare una possibile soluzione.
@@ -166,7 +176,7 @@ Descrivere il problema dello spider trap nell’algoritmo PageRank e illustrare 
 	Una soluzione può essere il
 	**Random Teleport**: ad ogni istante si segue un link con probabilita b e si salta ad una pagina casuale con probabilita 1-b.<br>
 	(b in range(0.8, 0.9))<br>
-
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 10
 Descrivere i principali problemi dell’algoritmo PageRank e illustrare una possibile soluzione.
@@ -186,7 +196,8 @@ Descrivere i principali problemi dell’algoritmo PageRank e illustrare una poss
 	<br><br>
 	**Dead End**: se c'e un nodo senza archi uscenti l'algoritmo converge ma tutte le pagine avranno importanza 0.<br><br>
 	entrambi i problemi si risolvono con il **Random Teleport**: ad ogni istante si segue un link con probabilita b e si salta ad una pagina casuale con probabilita 1-b (b in range[0.8, 0.9])
-
+	<br>
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 11
 Descrivere in maniera sintetica il concetto di reificazione degli statement RDF.
@@ -194,7 +205,8 @@ Descrivere in maniera sintetica il concetto di reificazione degli statement RDF.
 <br><br>
 	**Reificazione** significa riduzione ad oggetto dell'asserzione. Si utilizza la reificazione per esprimere meta-informazioni su una meta-informazione. Quindi l'oggetto della tripla Soggetto-Proprietà-Oggetto diventa uno statement, quindi una tripla Soggetto-Proprietà-Oggetto.
 	Dopo avere reificato l’asserzione si potranno esprimere ulteriori proprietà su di essa.
-
+	<br>
+[Torna alla lista...](#Lista-Domande:)
 <br><br><br>
 # 12
 Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione basata su matrici di adiacenza stocastiche
@@ -220,3 +232,4 @@ Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando 
 	L'autovettore che cerchiamo è quello associato all'***autovalore 1*** (il fatto che la matrice M sia stocastica ci assicura l'esistenza di tale autovettore).<br>
 	Inoltre possiamo risolvere questo problema in modo efficiente con il metodo delle power iteration:<br>
 	![](./img/rank_power.PNG)
+[Torna alla lista...](#Lista-Domande:)
