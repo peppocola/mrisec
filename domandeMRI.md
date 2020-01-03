@@ -48,7 +48,7 @@
 **Illustrare in maniera sintetica i problemi dei recommender systems di tipo collaborativo.**
 
 <br><br>
-		**Matrice sparsa per i rating** :=  il problema della sparità è comune alla maggior parte dei recommender system perchè solitamente gli utenti valutano solo una piccola parte degli item disponibili. Ciò è aggravato dal fatto che gli utenti e gi item appena aggiunti al sistema non avranno alcuna valutazione (cold-start). Quando la matrice è sparsa, due utenti o item raramente hanno valutazioni in comune e gli approcci neighborhood-based  prediranno le valutazioni usando dei set di vicini molto piccoli. Questo porterà a delle raccomandazioni non affidabili.
+		**Matrice sparsa per i rating** :=  il problema della sparsità è comune alla maggior parte dei recommender system perchè solitamente gli utenti valutano solo una piccola parte degli item disponibili. Ciò è aggravato dal fatto che gli utenti e gi item appena aggiunti al sistema non avranno alcuna valutazione (cold-start). Quando la matrice è sparsa, due utenti o item raramente hanno valutazioni in comune e gli approcci neighborhood-based  prediranno le valutazioni usando dei set di vicini molto piccoli. Questo porterà a delle raccomandazioni non affidabili.
 		<br>
 		**Cold-start** := In un recommender system di tipo collaborativo, è essenziale avere una community che valuta gli item per poter effettuare delle raccomandazioni. Senza community non c'è modo di raccomandare item e si devono utilizzare approcci differenti (es: content-based o raccomandare oggetti popolari, forzare utenti a valutare item, default voting).
 		<br>
