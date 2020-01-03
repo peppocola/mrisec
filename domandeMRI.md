@@ -35,11 +35,12 @@
 		<br>
 		**New user** := Prima che un recommender system di tipo content-based possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
 		<br>
-		**Limited Content Analisys** := un item potrebbe essere descritto in generale senza fare menzione delle feature più importanti, che potrebbe portare a il sistema a raccomandare l'item quando non dovrebbe o proprio a non essere mai raccomandato.
+		**Limited Content Analisys** := (un item potrebbe essere descritto in generale senza fare menzione delle feature più importanti. Ciò potrebbe portare il sistema a raccomandare l'item quando non dovrebbe essere raccomandato o a non essere mai raccomandato.) (?)
 		<br>
 		Nessun content-based recommender system può fornire delle raccomandazioni affidabili se il contenuto analizzato non ha abbastanza informazioni per distinguere gli item che piacciono all'utente rispetto a quelli che non gradisce. Alcune rappresentazioni hanno solamente alcuni aspetti e ne tralasciano altri che potrebbero influenzare l'esperienza dell'utente
 		<br>
-		In conclusione, assegnare manualmente o automaticamente le features all'item potrebbe non essere sufficiente per distuinguere gli aspetti dell'item che sono necessari per l'elicitazione degli interessi dell'utente
+		In conclusione, assegnare manualmente o automaticamente le features all'item potrebbe non essere sufficiente per distuinguere gli aspetti dell'item che sono necessari per l'elicitazione degli interessi dell'utente.
+
 
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
@@ -50,7 +51,7 @@
 		**Matrice sparsa per i rating** := difficile trovare dei vicini
 		se un utente non esprime preferenze non può avere raccomandazioni
 		<br>
-		**Cold-start** := In un recommender system di tipo collaborativo, è essenziale avere una community che valuta gli item per poter effettuare delle raccomandazioni. senza community non c'è modo di raccomandare item e si devono utilizzare approcci differenti (es: content-based o raccomandare oggetti popolari).
+		**Cold-start** := In un recommender system di tipo collaborativo, è essenziale avere una community che valuta gli item per poter effettuare delle raccomandazioni. Senza community non c'è modo di raccomandare item e si devono utilizzare approcci differenti (es: content-based o raccomandare oggetti popolari, forzare utenti a valutare item, default voting).
 		<br>
 		**New-user** := Un nuovo utente non può avere alcuna raccomandazione con questo approccio fino a quando non esprime almeno una preferenza. Tuttavia le raccomandazioni saranno poco accurate fino a quando l'utente non fornirà un buon numero di preferenze.
 		<br>
@@ -98,12 +99,14 @@
 	<br>
 	Inoltre si pesa maggiormente il rating su un item controverso piuttosto che uno su un item con scarsa varianza sui rating. (utilizzare la varianza)
 	<br>
-	Un approccio puo essere quello di usare la inverse user frequency
+	Un approccio puo essere quello di usare la inverse user frequency.
 	<br>
 	![](./img/u2u_inverseUser.PNG)
 	<br>
 	![](./img/u2u_FWPC.PNG)
 	<br>
+	Per la selezione dei neighbors utilizzare un numero fissato di vicini o una soglia di similiarità.
+
 
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
