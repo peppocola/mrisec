@@ -48,11 +48,11 @@
 **Illustrare in maniera sintetica i problemi dei recommender systems di tipo collaborativo.**
 
 <br><br>
-		**Matrice sparsa per i rating** :=  il problema della sparsità è comune alla maggior parte dei recommender system perchè solitamente gli utenti valutano solo una piccola parte degli item disponibili. Ciò è aggravato dal fatto che gli utenti e gi item appena aggiunti al sistema non avranno alcuna valutazione (cold-start). Quando la matrice è sparsa, due utenti o item raramente hanno valutazioni in comune e gli approcci neighborhood-based  prediranno le valutazioni usando dei set di vicini molto piccoli. Questo porterà a delle raccomandazioni non affidabili.
+		**Matrice sparsa per i rating** :=  il problema della sparsità è comune alla maggior parte dei recommender system perchè solitamente gli utenti valutano solo una piccola parte degli item disponibili. Ciò è aggravato dal fatto che gli utenti e gli item appena aggiunti al sistema non avranno alcuna valutazione (cold-start). Quando la matrice è sparsa, due utenti o item raramente hanno valutazioni in comune e gli approcci neighborhood-based prediranno le valutazioni usando dei set di vicini molto piccoli. Questo porterà a delle raccomandazioni non affidabili.
 		<br>
 		**Cold-start** := In un recommender system di tipo collaborativo, è essenziale avere una community che valuta gli item per poter effettuare delle raccomandazioni. Senza community non c'è modo di raccomandare item e si devono utilizzare approcci differenti (es: content-based o raccomandare oggetti popolari, forzare utenti a valutare item, default voting).
 		<br>
-		**New-user** := Un nuovo utente non può avere alcuna raccomandazione con questo approccio fino a quando non esprime almeno una preferenza. Tuttavia le raccomandazioni saranno poco accurate fino a quando l'utente non fornirà un buon numero di preferenze.
+		**New-user** := Un nuovo utente non può avere alcuna raccomandazione con questo approccio fino a quando non esprime almeno una preferenza. Se non esprime delle preferenze, non può essere "vicino" di alcun altro utente. Tuttavia le raccomandazioni saranno poco accurate fino a quando l'utente non fornirà un buon numero di preferenze.
 		<br>
 		**New-item** := Un nuovo item non ha alcuna preferenza espressa da alcun utente. Quindi non risulterà neighbor di nessun altro oggetto nel caso item-to-item. Anche nel caso user-to-user sarà impossibile effettuare predizioni per alcun utente su quell'item perchè nessun'altro utente risulterà neighbor dell'utente su cui vogliamo calcolare la predizione.  Un new-item non verrà raccomandato fino a quando non ci sarà qualche utente che lo valuterà.
 		<br>
@@ -122,6 +122,12 @@
 
 <br><br>
 	Prima che un recommender system di tipo content-based possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
+	In un recommender system di tipo collaborativo, è essenziale avere una community che valuta gli item per poter effettuare delle raccomandazioni. Senza community non c'è modo di raccomandare item e si devono utilizzare approcci differenti (es: content-based o raccomandare oggetti popolari, forzare utenti a valutare item, default voting).
+	<br>
+	**New-user** := Un nuovo utente non può avere alcuna raccomandazione con questo approccio fino a quando non esprime almeno una preferenza. Se non esprime delle preferenze, non può essere "vicino" di alcun altro utente. Tuttavia le raccomandazioni saranno poco accurate fino a quando l'utente non fornirà un buon numero di preferenze.
+	<br>
+	**New-item** := Un nuovo item non ha alcuna preferenza espressa da alcun utente. Quindi non risulterà neighbor di nessun altro oggetto nel caso item-to-item. Anche nel caso user-to-user sarà impossibile effettuare predizioni per alcun utente su quell'item perchè nessun'altro utente risulterà neighbor dell'utente su cui vogliamo calcolare la predizione.  Un new-item non verrà raccomandato fino a quando non ci sarà qualche utente che lo valuterà.
+	<br>
 	<br>
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
