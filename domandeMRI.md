@@ -56,7 +56,7 @@
 		<br>
 		**New-item** := Un nuovo item non ha alcuna preferenza espressa da alcun utente. Quindi non risulterà neighbor di nessun altro oggetto nel caso item-to-item. Anche nel caso user-to-user sarà impossibile effettuare predizioni per alcun utente su quell'item perchè nessun'altro utente risulterà neighbor dell'utente su cui vogliamo calcolare la predizione.  Un new-item non verrà raccomandato fino a quando non ci sarà qualche utente che lo valuterà.
 		<br>
-		**Gray-sheep** :=	difficile trovare utenti simili significativi se un utente valuta con rating neutrali ogni item, non si sbilancia nel valutare. ***&ast;***
+		**Gray-sheep** := un utente le cui opionioni non concordano o discordano con alcun gruppo di persone. Ciò rende impossibile trovare un set significativo di neighbors e quindi di effettuare raccomandazioni specifiche. un utente "gray sheep" non si sbilancia nel valutare e valuta in modo neutrale la maggior parte o la totalità degli item.
 		<br>
 		**"Canto delle sirene"(SEMERARO TRADEMARK)** := valutazioni false o organizzate alterano lo stato del sistema e influenzano le raccomandazioni ***&ast;***
 		<br><br>
