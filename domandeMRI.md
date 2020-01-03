@@ -48,14 +48,13 @@
 **Illustrare in maniera sintetica i problemi dei recommender systems di tipo collaborativo.**
 
 <br><br>
-		**Matrice sparsa per i rating** := difficile trovare dei vicini
-		se un utente non esprime preferenze non può avere raccomandazioni
+		**Matrice sparsa per i rating** :=  il problema della sparità è comune alla maggior parte dei recommender system perchè solitamente gli utenti valutano solo una piccola parte degli item disponibili. Ciò è aggravato dal fatto che gli utenti e gi item appena aggiunti al sistema non avranno alcuna valutazione (cold-start). Quando la matrice è sparsa, due utenti o item raramente hanno valutazioni in comune e gli approcci neighborhood-based  prediranno le valutazioni usando dei set di vicini molto piccoli. Questo porterà a delle raccomandazioni non affidabili.
 		<br>
 		**Cold-start** := In un recommender system di tipo collaborativo, è essenziale avere una community che valuta gli item per poter effettuare delle raccomandazioni. Senza community non c'è modo di raccomandare item e si devono utilizzare approcci differenti (es: content-based o raccomandare oggetti popolari, forzare utenti a valutare item, default voting).
 		<br>
 		**New-user** := Un nuovo utente non può avere alcuna raccomandazione con questo approccio fino a quando non esprime almeno una preferenza. Tuttavia le raccomandazioni saranno poco accurate fino a quando l'utente non fornirà un buon numero di preferenze.
 		<br>
-		**New-item** := Un nuovo item non ha alcuna preferenza espressa da alcun utente e non verrà raccomandato fino a quando non ci sarà qualche utente che lo valuterà.
+		**New-item** := Un nuovo item non ha alcuna preferenza espressa da alcun utente. Quindi non risulterà neighbor di nessun altro oggetto nel caso item-to-item. Anche nel caso user-to-user sarà impossibile effettuare predizioni per alcun utente su quell'item perchè nessun'altro utente risulterà neighbor dell'utente su cui vogliamo calcolare la predizione.  Un new-item non verrà raccomandato fino a quando non ci sarà qualche utente che lo valuterà.
 		<br>
 		**Gray-sheep** :=	difficile trovare utenti simili significativi se un utente valuta con rating neutrali ogni item, non si sbilancia nel valutare. ***&ast;***
 		<br>
