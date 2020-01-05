@@ -31,7 +31,7 @@
 **Illustrare in maniera sintetica i problemi dei recommender systems di tipo content-based.**
 
 <br><br>
-		**Many of the same/Overspecialization** := I recommender system di tipo content-based non hanno un metodo per trovare qualcosa di nuovo. Il sistema suggerisce gli item che, quando confrontati con il profilo dell'utente, hanno un punteggio alto. Quindi all'utente saranno raccomandati gli item simili a quelli gia votati. Questo inconveniente è chiamato serendipity problem che evidenzia la tendenza dei sistemi basati sui contenuti a produrre raccomandazioni con un limitato grado di novita. Per dare un esempio, quando un utente ha valutato solo i film di Harry Potter, ricevera raccomandazioni solo per quel tipo di film. Una tecnica content-based perfetta raramente proporra qualcosa di nuovo, limitando cosi le applicazioni per le quali potrebbe essere utile.
+		**More of the same/Overspecialization** := I recommender system di tipo content-based non hanno un metodo per trovare qualcosa di nuovo. Il sistema suggerisce gli item che, quando confrontati con il profilo dell'utente, hanno un punteggio alto. Quindi all'utente saranno raccomandati gli item simili a quelli gia votati. Questo inconveniente è chiamato serendipity problem che evidenzia la tendenza dei sistemi basati sui contenuti a produrre raccomandazioni con un limitato grado di novita. Per dare un esempio, quando un utente ha valutato solo i film di Harry Potter, ricevera raccomandazioni solo per quel tipo di film. Una tecnica content-based perfetta raramente proporra qualcosa di nuovo, limitando cosi le applicazioni per le quali potrebbe essere utile.
 		<br>
 		**New user** := Prima che un recommender system di tipo content-based possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
 		<br>
@@ -136,8 +136,8 @@
 
 <br><br>
 	**INTRO**
-	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le pagine.
-	Per il rank delle pagine si sfrutta la struttura del grafo (link entranti e uscenti da ogni nodo)
+	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le pagine. Non si tiene conto del contenuto delle pagine.
+	Per il rank delle pagine si sfrutta la struttura del grafo (link entranti e uscenti da ogni nodo).
 	<br>
 	**FLOW MODEL**
 	I link vengono visti come voti, l'importanza di un link è proporzionale all' importanza della pagina da cui proviene. In particolare il peso di un link è dato dall' importanza della pagina diviso l'out degree della pagina.
@@ -219,8 +219,8 @@
 
 <br><br>
 	**INTRO**
-	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le pagine.
-	Per il rank delle pagine si sfrutta la struttura del grafo (link entranti e uscenti da ogni nodo)
+	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le pagine. Non si tiene conto del contenuto delle pagine.
+	Per il rank delle pagine si sfrutta la struttura del grafo (link entranti e uscenti da ogni nodo).
 	<br><br>
 	**MATRIX FORMULATION**:<br>
 	In questa formulazione si costruisce a partire dal grafo una matrice di adiacenza stocastica sulle colonne. (la somma delle colonne è 1)<br>
