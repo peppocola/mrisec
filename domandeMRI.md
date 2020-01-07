@@ -121,7 +121,7 @@
 **Illustrare in maniera sintetica il problema del Cold-start nei recommender systems di tipo collaborativo**
 
 <br><br>
-	Prima che un recommender system di tipo content-based possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
+	Prima che un recommender system di tipo collaborativo possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
 	In un recommender system di tipo collaborativo, è essenziale avere una community che valuta gli item per poter effettuare delle raccomandazioni. Senza community non c'è modo di raccomandare item e si devono utilizzare approcci differenti (es: content-based o raccomandare oggetti popolari, forzare utenti a valutare item, default voting).
 	<br>
 	**New-user** := Un nuovo utente non può avere alcuna raccomandazione con questo approccio fino a quando non esprime almeno una preferenza. Se non esprime delle preferenze, non può essere "vicino" di alcun altro utente. Tuttavia le raccomandazioni saranno poco accurate fino a quando l'utente non fornirà un buon numero di preferenze.
