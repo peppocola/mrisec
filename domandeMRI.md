@@ -144,18 +144,20 @@
 <br><br>
 	**INTRO**<br>
 	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le pagine. Non si tiene conto del contenuto delle pagine.<br>
-	L'importanza della pagina è data dalla topologia del grafo:
-	- Una pagina è importante se puntata da tante pagine (link entranti) o da pagine con molta importanza.
-	- Una pagina trasferisce importanza attraverso i link uscenti e lo fa in maniera proporzionale al numero di link uscenti che possiede.                           
-	<br>
+	Per il rank delle pagine si sfrutta la struttura del grafo (link entranti e uscenti da ogni nodo).
+	<br><br>
 	**FLOW MODEL**<br>
+	L'importanza della pagina è data dalla topologia del grafo:
+	<br>- Una pagina è importante se puntata da tante pagine (link entranti) o da pagine con molta importanza.
+	<br>- Una pagina trasferisce importanza attraverso i link uscenti e lo fa in maniera proporzionale al numero di link uscenti che possiede.                           
+	<br>
 	I link vengono visti come voti, l'importanza di un link è proporzionale all' importanza della pagina da cui proviene. In particolare il peso di un link è dato dall' importanza della pagina diviso l'out degree della pagina.
-	L'importanza di una pagina è data dalla somma dei voti su i suoi link entranti.
+	L'importanza di una pagina è data dalla somma dei voti/pesi su i suoi link entranti.
 	<br>
 	![](./img/rank_flow.PNG)
 	<br>
 	Se costruiamo le "equazioni di flusso" per un grafo otteniamo n equazioni in n incognite. Questo non permette di avere una soluzione unica. Per risolvere questo problema si aggiunge un ulteriore vincolo che permette l'unicità ***(r1+r2+...+rn=1)***.
-	In questo modo si può risolvere il sistema di equazioni con l'Eliminazione di Gauss che tuttavia funziona bene con piccoli grafi ma non è scalabile.<br>
+	In questo modo si può risolvere il sistema di equazioni con l'Eliminazione di Gauss che funziona bene con piccoli grafi ma non è scalabile.<br>
 	Quindi abbiamo bisogno di una nuova formulazione ovvero la **MATRIX FORMULATION**
 	<br>
 [Torna alla lista...](#Lista-Domande)
