@@ -1,5 +1,12 @@
 ***Se trovi qualche errore o puoi suggerire qualche miglioria, fallo inviando una pull-request oppure segnalamelo in qualche modo, grazie***
 
+# Contributors
+- [GreenSully](https://github.com/GreenSully)
+- [Ocen5](https://github.com/Ocen5)
+- [paologas91](https://github.com/paologas91)
+- [peppocola](https://github.com/peppocola)
+
+
 # Lista Domande
 
 [1](#1))Illustrare in maniera sintetica i problemi dei recommender systems di tipo content-based.
@@ -135,11 +142,13 @@
 **Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione ricorsiva basata sul “flow” model.**
 
 <br><br>
-	**INTRO**
-	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le pagine. Non si tiene conto del contenuto delle pagine.
-	Per il rank delle pagine si sfrutta la struttura del grafo (link entranti e uscenti da ogni nodo).
+	**INTRO**<br>
+	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le pagine. Non si tiene conto del contenuto delle pagine.<br>
+	L'importanza della pagina è data dalla topologia del grafo:
+	- Una pagina è importante se puntata da tante pagine (link entranti) o da pagine con molta importanza.
+	- Una pagina trasferisce importanza attraverso i link uscenti e lo fa in maniera proporzionale al numero di link uscenti che possiede.                           
 	<br>
-	**FLOW MODEL**
+	**FLOW MODEL**<br>
 	I link vengono visti come voti, l'importanza di un link è proporzionale all' importanza della pagina da cui proviene. In particolare il peso di un link è dato dall' importanza della pagina diviso l'out degree della pagina.
 	L'importanza di una pagina è data dalla somma dei voti su i suoi link entranti.
 	<br>
