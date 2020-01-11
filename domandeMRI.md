@@ -2,6 +2,7 @@
 
 # Contributors
 - [GreenSully](https://github.com/GreenSully)
+- [NaimarDL](https://github.com/NaimarDL)
 - [Ocen5](https://github.com/Ocen5)
 - [paologas91](https://github.com/paologas91)
 - [peppocola](https://github.com/peppocola)
@@ -65,9 +66,9 @@
 		<br>
 		**Gray-sheep** := un utente le cui opionioni non concordano o discordano con alcun gruppo di persone. Ciò rende impossibile trovare un set significativo di neighbors e quindi di effettuare raccomandazioni specifiche. un utente "gray sheep" non si sbilancia nel valutare e valuta in modo neutrale la maggior parte o la totalità degli item.
 		<br>
-		**"Canto delle sirene"(SEMERARO TRADEMARK)** := valutazioni false o organizzate alterano lo stato del sistema e influenzano le raccomandazioni ***&ast;***
+		**"Canto delle sirene"(SEMERARO TRADEMARK)** := valutazioni false o organizzate alterano lo stato del sistema e influenzano le raccomandazioni. Si possono creare profili o arruolare utenti per cercare di aumentare la valutazione complessiva di uno o più prodotti e diminuire quella dei competitors.
+		<br>Lo scopo di questo attacco è manipolare "l'opinione" della comunità attaccata, promuovendo o contrastando la diffusione di un prodotto. E' possibile contrastare questi attacchi tramite l'analisi dei comportamenti degli utenti: nel caso di fake si avranno evidenti variazioni dalla media delle valutazioni degli items, oltre che una percentuale di ratings dell'80% circa (molto maggiore  rispetto ad utenti normali). Altre contromisure economiche sono l'uso di captcha o altri metodi di inserimento manuale, che però non funzionano in caso di arruolamento di utenti dietro compenso.
 		<br><br>
-		***&ast;= la risposta è approssimativa e stiamo cercando delle risposte migliori***
 
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
