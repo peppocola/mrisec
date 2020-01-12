@@ -5,6 +5,7 @@
 - [NaimarDL](https://github.com/NaimarDL)
 - [Ocen5](https://github.com/Ocen5)
 - [paologas91](https://github.com/paologas91)
+- [pasqualedem](https://github.com/pasqualedem)
 - [peppocola](https://github.com/peppocola)
 
 
@@ -32,7 +33,12 @@
 <br><br>
 [11](#11))Descrivere in maniera sintetica il concetto di reificazione degli statement RDF.
 <br><br>
-[12](#12))Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione basata su matrici di adiacenza stocastiche
+[12](#12))Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione basata su matrici di adiacenza stocastiche.
+<br><br>
+[13](#13))Elencare similiarità e differenze tra sistemi di Information Filtering e Information Retrieval ***NEW***
+<br><br>
+[14](#14))Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo item-to-item. ***NEW***
+<br><br>
 
 
 # 1
@@ -252,3 +258,12 @@
 	Inoltre possiamo risolvere questo problema in modo efficiente con il metodo delle power iteration:<br>
 	![](./img/rank_power.PNG)
 [Torna alla lista...](#Lista-Domande)
+<br><br><br>
+# 13
+***SEZIONE IN LAVORAZIONE***
+[Torna alla lista...](#Lista-Domande)
+<br><br><br>
+# 14
+***SEZIONE IN LAVORAZIONE***
+[Torna alla lista...](#Lista-Domande)
+<br><br><br>
