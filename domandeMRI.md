@@ -9,6 +9,9 @@
 - [pasqualedem](https://github.com/pasqualedem)
 - [peppocola](https://github.com/peppocola)
 
+# Indice
+- [Lista Domande](#Lista-Domande)
+- [Risposte](#Risposte)
 
 # Lista Domande
 
@@ -41,6 +44,7 @@
 [14](#14))Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo item-to-item. ***NEW***
 <br><br>
 
+# Risposte
 
 # 1
 **Illustrare in maniera sintetica i problemi dei recommender systems di tipo content-based.**
