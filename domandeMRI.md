@@ -1,4 +1,4 @@
-**SONO STATE AGGIUNTE DUE NUOVE DOMANDE (13 e 14)**
+**SONO STATE AGGIUNTE DUE NUOVE DOMANDE (13 e 14)**<br>
 ***Se trovi qualche errore o puoi suggerire qualche miglioria, fallo inviando una pull-request oppure segnalamelo in qualche modo, grazie***
 
 # Contributors
