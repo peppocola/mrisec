@@ -285,6 +285,12 @@
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 14
+**Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo item-to-item.**
+
+<br><br>
+![](./img/i2i_sim.PNG)
+![](./img/i2i_prediction.PNG)
+<br>
 ***SEZIONE IN LAVORAZIONE***
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
