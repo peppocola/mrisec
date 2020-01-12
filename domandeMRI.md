@@ -260,10 +260,18 @@
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 13
+**Elencare similiarità e differenze tra sistemi di Information Filtering e Information Retrieval**
+
+<br><br>
+
 ***SEZIONE IN LAVORAZIONE***
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 14
+**Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo item-to-item.**
+
+<br><br>
+
 ***SEZIONE IN LAVORAZIONE***
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
