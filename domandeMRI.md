@@ -1,5 +1,3 @@
-**SONO STATE AGGIUNTE DUE NUOVE DOMANDE (13 e 14)**
-
 ***Se trovi qualche errore o puoi suggerire qualche miglioria, fallo inviando una pull-request oppure segnalamelo in qualche modo, grazie***
 
 # Contributors
@@ -238,6 +236,7 @@
 # 12
 **Descrivere in maniera sintetica i principi alla base del PageRank, focalizzando l’attenzione sulla formulazione basata su matrici di adiacenza stocastiche**
 
+
 <br><br>
 	**INTRO**
 	Il web viene visto come un grafo orientato dove i nodi rappresentano le pagine web e gli archi rappresentano i link tra le pagine. Non si tiene conto del contenuto delle pagine.
@@ -262,20 +261,28 @@
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 13
+***SEZIONE IN LAVORAZIONE***<br>
 **Elencare similiarità e differenze tra sistemi di Information Filtering e Information Retrieval**
 
+
 <br><br>
-
-***SEZIONE IN LAVORAZIONE***
-
+	**Rappresentazione del bisogno informativo:**<br>
+Entrambi i sistemi hanno come input un bisogno informativo il quale deve essere rappresentato in maniera appropriata per effettuare una comparazione, il bisogno informativo è però differente, nel caso dell'IR è una query, nel caso dell'IF è il profilo dell'utente.<br>
+	**Comparazione:**<br>
+La comparazione della rappresentazione del bisogno informativo viene effettuata in varie maniere in base alle tecniche utilizzate, (string matching, concept matching, U2U correlation, I2I correlation) alcune di queste tecniche sono in comune o hanno caratteristiche comuni (ad es. calcolo similarità tra vettori).<br>
+	**Feedback:**<br>
+I sistemi di IR e IF si avvalgono solitamente di un sistema di feedback per migliorarne le prestazioni.<br>
+	**Obbiettivo:**<br>
+L'obbiettivo è differente, mentre l' IR si occupa della collezione e organizzazione di testi per consentire la selezione di informazione rilevante per un determinato bisogno informativo, l'IF si occupa del filtraggio e distribuzione di informazione rilevante a determinati utenti o gruppi di utenti.<br>
+	**Utenti:**<br>
+Nell' IR l'utente è sconosciuto, nell'IF è profilato e rappresentato in maniera adeguata essendo egli stesso il bisogno informativo.<br>
+	**Frequenza d'uso:**<br>
+ L'utente dell'IR effettua singole ricerche ad hoc in base al suo bisogno informativo, l'utente dell'IF invece viene esposto ad una serie di informazioni in un processo di ricerca iterativo a lungo termine.<br>
+	**Database:**<br>
+Mentre l'IR riguarda la selezione di testi da un database relativamente statico, l'IF riguarda la selezione ed eliminazione di testi da un flusso di dati dinamico.<br>
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 14
-**Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo item-to-item.**
-
-<br><br>
-
 ***SEZIONE IN LAVORAZIONE***
-
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
