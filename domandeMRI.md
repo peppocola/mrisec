@@ -1,4 +1,4 @@
-**SONO STATE AGGIUNTE DUE NUOVE DOMANDE (13 e 14)**
+**SONO STATE AGGIUNTE DUE NUOVE DOMANDE (13 e 14)**<br>
 ***Se trovi qualche errore o puoi suggerire qualche miglioria, fallo inviando una pull-request oppure segnalamelo in qualche modo, grazie***
 
 # Contributors
@@ -50,12 +50,11 @@
 		<br>
 		**New user** := Prima che un recommender system di tipo content-based possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
 		<br>
-		**Limited Content Analisys** := (un item potrebbe essere descritto in generale senza fare menzione delle feature più importanti. Ciò potrebbe portare il sistema a raccomandare l'item quando non dovrebbe essere raccomandato o a non essere mai raccomandato.) (?)
-		<br>
-		Nessun content-based recommender system può fornire delle raccomandazioni affidabili se il contenuto analizzato non ha abbastanza informazioni per distinguere gli item che piacciono all'utente rispetto a quelli che non gradisce. Alcune rappresentazioni hanno solamente alcuni aspetti e ne tralasciano altri che potrebbero influenzare l'esperienza dell'utente
+		**Limited Content Analisys** := Nessun content-based recommender system può fornire delle raccomandazioni affidabili se il contenuto analizzato non ha abbastanza informazioni per distinguere gli item che piacciono all'utente rispetto a quelli che non gradisce. Alcune rappresentazioni hanno solamente alcuni aspetti e ne tralasciano altri che potrebbero influenzare l'esperienza dell'utente
 		<br>
 		In conclusione, assegnare manualmente o automaticamente le features all'item potrebbe non essere sufficiente per distuinguere gli aspetti dell'item che sono necessari per l'elicitazione degli interessi dell'utente.
-
+		<br>
+		(un item potrebbe essere descritto in generale senza fare menzione delle feature più importanti, che siano assegnate automaticamente o manualmente. Ciò potrebbe portare il sistema a raccomandare l'item quando non dovrebbe essere raccomandato o a non essere mai raccomandato.)
 
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
