@@ -289,25 +289,26 @@
 <br><br><br>
 # 14
 **Descrivere, commentando opportunamente, la funzione per il calcolo delle predizioni dei rating in un algoritmo di filtraggio collaborativo di tipo item-to-item.**
-Prima di illustrare dettagliatamente i diversi passi utili a predire il voto che darà un determinato utente (Utente attivo), ad un item che non ha ancora visitato (quindi non ha espresso voto), cerchiamdo di dare delle informazioni generali al tipo di algoritmo utilizzato, quello dell'Item to Item Collaborative filtering.
 
-L'algoritmo Item to Item CF fa parte di un approccio Model Based (a differenza dello User to User che è un algoritmo Memory Based). 
-
-Si necessita di tale algoritmo, in quanto si è visto che a stato dell'arte funziona meglio rispetto all'algoritmo User to User, in quanto va ad ovviare al problema del numero molto elevato degli Users per un determinato sistema(Amazon, possiede un numero di utenti di gran lunga superiore al numero degli item). Dunque lavorare su un dataset più ristretto fa si che le performance di un RS, siano migliori.
-
-Supponiamo di predire il voto che darà un Utente attivo(U) ad un item(i), che non ha ancora visitato.
-PASSO 1.
-Diamo un valore di similarità, tra l'item (i) e i suoi neighbors, utilizzando una tecnica nota come l' Adjusted Cosine Similarity, che tiene conto della media dei voti dati dagli utenti e definita in questo modo:
 <br><br>
-![](./img/i2i_sim.PNG)
-
-N.B. Le similarità che devono essere calcolate devono riguardare l'item (i),  e gli altri item per i quali l'utente attivo ha espresso voto.
-PASSO2
-A questo punto, possiamo predire il voto che darà U all'item in questione, attraverso tale formulazione :
-![](./img/i2i_prediction.PNG)
-<br>
-Per migliorare la prediction, possiamo ricondurci alle tecniche viste per lo user to user CF (domanda 4)
-Questo tipo di approccio è stato utilizzato da Amazon nel 2003.
+	L'algoritmo Item to Item CF fa parte di un approccio Model Based (a differenza dello User to User che è un algoritmo Memory Based).
+	<br>
+	Si necessita di tale algoritmo in quanto va ad ovviare al problema del numero molto elevato degli Users per un determinato sistema(Amazon, possiede un numero di utenti di gran lunga superiore al numero degli item). Dunque lavorare su un dataset più ristretto fa si che le performance di un RS siano migliori.
+	<br>
+	Supponiamo di predire il voto che darà un Utente attivo(u) ad un item(p), che non ha ancora visitato.
+	<br>
+	Diamo un valore di similarità, tra l'item e i suoi neighbors, utilizzando una l'Adjusted Cosine Similarity, che tiene conto della media dei voti dati dagli utenti:
+	<br><br>
+	![](./img/i2i_sim.PNG)
+	<br><br>
+	N.B. Le similarità che devono essere calcolate devono riguardare l'item e gli altri item per i quali l'utente attivo ha espresso voto.
+	<br><br>
+	A questo punto, possiamo predire il voto che darà u all'item in questione, attraverso la seguente formula:
+	<br><br>
+	![](./img/i2i_prediction.PNG)
+	<br><br>
+	Per migliorare la prediction, possiamo ricondurci alle tecniche viste per lo user to user CF (domanda 4)
+	Questo tipo di approccio è stato utilizzato da Amazon nel 2003.
 
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
