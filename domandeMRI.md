@@ -3,6 +3,7 @@
 
 # Contributors
 - [GreenSully](https://github.com/GreenSully)
+- [microcrit](https://github.com/mircocrit)
 - [NaimarDL](https://github.com/NaimarDL)
 - [Ocen5](https://github.com/Ocen5)
 - [paologas91](https://github.com/paologas91)
@@ -177,7 +178,8 @@
 **Descrivere in maniera sintetica i concetti fondamentali alla base del modello dei dati RDF, in particolare i concetti di risorsa, proprietà e statement.**
 
 <br><br>
-	il modello dei dati RDF è basato su tre concetti:
+	L’RDF è un modello (framework) utilizzato per arricchire i contenuti web di metadati, attraverso una struttura che mette in relazione i contenuti con le loro proprietà. <br>
+	Il modello dei dati RDF è basato su tre concetti:
 	<br>
 	 – **Risorse**: tutto ciò che viene descritto, ogni risorsa è identificata da un URI
 	<br>
