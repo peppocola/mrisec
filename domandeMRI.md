@@ -52,6 +52,11 @@
 
 <br><br>
 		**More of the same/Overspecialization** := I recommender system di tipo content-based non hanno un metodo per trovare qualcosa di nuovo. Il sistema suggerisce gli item che, quando confrontati con il profilo dell'utente, hanno un punteggio alto. Quindi all'utente saranno raccomandati gli item simili a quelli gia votati. Questo inconveniente è chiamato serendipity problem che evidenzia la tendenza dei sistemi basati sui contenuti a produrre raccomandazioni con un limitato grado di novita. Per dare un esempio, quando un utente ha valutato solo i film di Harry Potter, ricevera raccomandazioni solo per quel tipo di film. Una tecnica content-based perfetta raramente proporra qualcosa di nuovo, limitando cosi le applicazioni per le quali potrebbe essere utile.
+		Alcune soluzioni:<br>
+ 		-Limitare superiormente il livello di similarità in modo da eliminare gli item con un livello eccessivo di similarità.<br>
+		-Introdurre casualità nel sistema, ad esempio offrendo su 5 suggerimenti 1 scelto in modo casuale, non sulla base del profilo dell’utente.<br>
+ 		-Introdurre conoscenza esterna nel sistema:
+		arricchendo la descrizione degli elementi con features non banali o con apparati più strutturati di features che permettono di mettere in relazione gli elementi in modo inedito e inaspettato, è possibile generare suggerimenti più vari.
 		<br>
 		**New user** := Prima che un recommender system di tipo content-based possa realmente capire le preferenze di un utente e fornire delle raccomandazioni accurate, deve collezionare un numero sufficiente di ratings. Quando sono disponibili pochi ratings il sistema non sarà in grado di fornire raccomandazioni affidabili.
 		<br>
