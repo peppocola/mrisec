@@ -1,4 +1,3 @@
-**SONO STATE AGGIUNTE DUE NUOVE DOMANDE (13 e 14)**<br>
 ***Se trovi qualche errore o puoi suggerire qualche miglioria, fallo inviando una pull-request oppure segnalamelo in qualche modo, grazie***
 
 # Contributors
@@ -230,19 +229,20 @@
 <br><br>
 	**(1) (Stanford University)**<br>
 	<br>
-	**Spider Trap**: un gruppo di una o più pagine che non hanno alcun link che porta a nodi che non appartengono al gruppo. in questo caso i nodi appartenenti al gruppo accumuleranno tutta l'importanza del Web. 	
+	**Spider Trap**: un gruppo di una o più pagine che non hanno alcun link che porta a nodi che non appartengono al gruppo. in questo caso i nodi appartenenti al gruppo accumuleranno tutta l'importanza del Web.
+	Una soluzione è quella di "tassare" ogni pagina di una frazione della sua importanza(solitamente 0.2) e distribuire l'importanza tassata in modo uguale verso tutte le pagine (**Random Teleport**)
 	<br>
 	**Dead End**: una pagina che non ha successori (link uscenti) non può inviare la sua importanza a nessun nodo. In questo caso tutta l'importanza fuoriuscirà dal web(tutti i nodi avranno importanza 0).
-	<br><br>
-	Una soluzione ad entrambi i problemi è quella di "tassare" ogni pagina di una frazione della sua importanza(solitamente 0.2) e distribuire l'importanza tassata in modo uguale verso tutte le pagine (**Random Teleport**)
+	<br>
+	Una soluzione è l'**Always Teleport**: dai dead end si seguono i link del **Random Teleport** con probabilita 1.<br>
 	<br><br>
 	**(2) (Grisulli)**<br>
 	<br>
 	**Spider Trap**: se nel grafo c'è un gruppo di nodi che sono collegati solo tra loro, senza alcun modo di raggiungere nodi al di fuori del gruppo, questi nodi assorbono l'importanza e non è garantita la convergenza dell' algoritmo.
+	Una soluzione è il **Random Teleport**: ad ogni istante si segue un link con probabilita b e si salta ad una pagina casuale con probabilita 1-b (b in range[0.8, 0.9])
 	<br><br>
-	**Dead End**: se c'e un nodo senza archi uscenti l'algoritmo converge ma tutte le pagine avranno importanza 0.<br><br>
-	entrambi i problemi si risolvono con il **Random Teleport**: ad ogni istante si segue un link con probabilita b e si salta ad una pagina casuale con probabilita 1-b (b in range[0.8, 0.9])
-	<br>
+	**Dead End**: se c'e un nodo senza archi uscenti l'algoritmo converge ma tutte le pagine avranno importanza 0.<br>
+	Una soluzione è l'**Always Teleport**: dai dead end si seguono i link del **Random Teleport** con probabilita 1.<br>
 [Torna alla lista...](#Lista-Domande)
 <br><br><br>
 # 11
