@@ -2,7 +2,7 @@
 
 # Contributors
 - [GreenSully](https://github.com/GreenSully)
-- [microcrit](https://github.com/mircocrit)
+- [mircocrit](https://github.com/mircocrit)
 - [NaimarDL](https://github.com/NaimarDL)
 - [Ocen5](https://github.com/Ocen5)
 - [paologas91](https://github.com/paologas91)
