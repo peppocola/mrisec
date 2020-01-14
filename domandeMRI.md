@@ -87,9 +87,15 @@
 **Descrivere le metriche di errore (MAE ed RMSE) utilizzate per la valutazione dell’accuratezza dei recommender systems.**
 
 <br><br>
-	**MAE** := Mean Absolute Error, calcola la deviazione tra i rating predetti e i rating reali
-<br>
-	**RMSE** := Root Mean Square Error, come MAE ma penalizza deviazioni più grandi utilizzando il quadrato della differenza tra rating predetto e rating attuale
+	La valutazione dell’accuratezza è un aspetto della valutazione offline di un recommender systems e consiste nel
+	confrontare le raccomandazioni predette dal sistema con un insieme di giudizi di gradimento già espressi dagli utenti, detto ground truth.<br>
+	(L’accuratezza consiste nel suggerire item realmente rilevanti per l’utente)<br>
+	Suddivido tale insieme di rating in training set e test set, usati per addestrare e testare il recommender system.<br>
+	Il confronto fra predizioni e giudizi reali si effettua usando metriche di:
+	<br>
+		**MAE** := Mean Absolute Error, calcola la deviazione tra i rating predetti e i rating reali.
+		<br>
+		**RMSE** := Root Mean Square Error, come MAE ma penalizza deviazioni più grandi utilizzando il quadrato della differenza tra rating predetto e rating attuale.
 
 ![](./img/mae_rmse.PNG)
 
